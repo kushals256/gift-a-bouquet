@@ -116,7 +116,7 @@ export default function Share() {
                 </div>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center', marginTop: '2rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center', marginTop: '6rem' }}>
                 <button className="btn-primary" onClick={handleCopyLink} style={{ width: '100%', maxWidth: '250px' }}>
                     {copied ? 'Copied!' : 'Copy Link'}
                 </button>
