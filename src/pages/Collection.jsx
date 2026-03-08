@@ -56,12 +56,12 @@ export default function Collection() {
     };
 
     return (
-        <main style={{ padding: '2rem' }}>
-            <div className="text-center" style={{ marginBottom: '3rem' }}>
+        <main style={{ padding: 'min(2rem, 5vw)' }}>
+            <div className="text-center" style={{ marginBottom: 'min(3rem, 10vw)' }}>
                 <div className="logo-container" style={{ margin: '0 auto' }}>
-                    <h1 className="logo-text" style={{ fontSize: '3.5rem' }}>curated collection</h1>
+                    <h1 className="logo-text" style={{ fontSize: 'clamp(2rem, 10vw, 3.5rem)' }}>curated collection</h1>
                 </div>
-                <p style={{ marginTop: '1rem', letterSpacing: '2px', fontSize: '1rem', color: '#666', textTransform: 'uppercase' }}>
+                <p style={{ marginTop: '1rem', letterSpacing: '2px', fontSize: 'clamp(0.8rem, 3vw, 1rem)', color: '#666', textTransform: 'uppercase' }}>
                     Choose from our beautifully pre-arranged bouquets.
                 </p>
                 <div style={{ marginTop: '2rem' }}>
@@ -83,7 +83,7 @@ export default function Collection() {
                             onClick={() => handleSelectPreset(preset)}
                             style={{
                                 background: '#FFFCF8',
-                                padding: '2rem',
+                                padding: 'min(2rem, 5vw)',
                                 borderRadius: '4px',
                                 boxShadow: '0 10px 30px rgba(0,0,0,0.04)',
                                 cursor: 'pointer',
