@@ -127,6 +127,7 @@ export default function Share() {
 
             <div style={{ marginTop: '4rem', fontSize: '0.75rem', marginBottom: '2rem', letterSpacing: '1px', color: '#888' }}>
                 created with gift a bouquet<br />
+                -by kushalicious :)<br />
                 <a href="/" style={{ color: 'var(--text-color)', textDecoration: 'none', marginTop: '0.5rem', display: 'inline-block', borderBottom: '1px solid var(--text-color)' }}>make yours now</a>
             </div>
         </main>
