@@ -118,7 +118,7 @@ export default function Collection() {
                                     if (!flowerDef) return null;
 
                                     const r = 25 + rand() * 35;
-                                    const theta = rand() * 2 * Math.PI;
+                                    const theta = Math.PI + (rand() * Math.PI); // Top half
                                     const x = r * Math.cos(theta);
                                     const y = r * Math.sin(theta);
                                     const scale = 0.6 + rand() * 0.3;

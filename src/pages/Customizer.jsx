@@ -65,7 +65,7 @@ export default function Customizer() {
 
                     // Calculate random position in a circle cluster
                     const r = 40 + rand() * 50; // radius from center
-                    const theta = rand() * 2 * Math.PI; // angle
+                    const theta = Math.PI + (rand() * Math.PI); // Top half so they aren't hidden by the card
                     const x = r * Math.cos(theta);
                     const y = r * Math.sin(theta);
                     const scale = 0.8 + rand() * 0.4;

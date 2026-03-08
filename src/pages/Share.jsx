@@ -80,7 +80,7 @@ export default function Share() {
                         if (!flowerDef) return null;
 
                         const r = 35 + rand() * 45;
-                        const theta = rand() * 2 * Math.PI;
+                        const theta = Math.PI + (rand() * Math.PI); // Keep flowers in the top half
                         const x = r * Math.cos(theta);
                         const y = r * Math.sin(theta);
                         const scale = 0.8 + rand() * 0.4;
