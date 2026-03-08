@@ -55,17 +55,17 @@ export default function Share() {
                 Hi, I made this bouquet for you!
             </p>
 
-            <div style={{ margin: '1rem auto', position: 'relative', width: 400, height: 450 }}>
+            <div style={{ margin: '1rem auto', position: 'relative', width: 'min(100%, 400px)', height: 450 }}>
                 {/* Light neutral circle bg */}
                 <div style={{
                     position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)',
-                    width: 350, height: 350, background: '#F2EBE5', borderRadius: '50%', zIndex: 0
+                    width: 'min(90vw, 350px)', height: 'min(90vw, 350px)', background: '#F2EBE5', borderRadius: '50%', zIndex: 0
                 }}></div>
 
                 {/* Bouquet container centered in the circle */}
                 <div style={{
                     position: 'absolute', top: 175, left: '50%', transform: 'translate(-50%, -50%)',
-                    width: 300, height: 300, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1
+                    width: 'min(80vw, 300px)', height: 'min(80vw, 300px)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1
                 }}>
                     {/* Greenery */}
                     <div style={{
@@ -105,10 +105,11 @@ export default function Share() {
                 {/* Card Overlay */}
                 <div style={{
                     position: 'absolute', bottom: 10, left: '50%', transform: 'translateX(-50%) rotate(-2deg)',
-                    width: 320, padding: '2rem 1.5rem', border: 'none', background: '#FFFCF8',
+                    width: 'min(90vw, 320px)', padding: '2rem 1.5rem', border: 'none', background: '#FFFCF8',
                     textAlign: 'left', boxShadow: '0 20px 40px rgba(44, 53, 45, 0.08)', zIndex: 10,
                     fontFamily: 'var(--font-handwriting)',
-                    borderRadius: '2px'
+                    borderRadius: '2px',
+                    boxSizing: 'border-box'
                 }}>
                     <p style={{ fontSize: '1.4rem', color: 'var(--text-color)' }}>Dear {state.dear},</p>
                     <p style={{ fontSize: '1.3rem', margin: '1.5rem 0', whiteSpace: 'pre-wrap', color: 'var(--text-color)', lineHeight: 1.4 }}>{state.msg}</p>
