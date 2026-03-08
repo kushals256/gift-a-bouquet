@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { FLOWER_ASSETS, GREENERY_ASSETS } from '../data/assets';
+import confetti from 'canvas-confetti';
 
 function mulberry32(a) {
     return function () {
@@ -20,6 +21,35 @@ export default function Share() {
         if (s) {
             try {
                 setState(JSON.parse(atob(s)));
+
+                // Trigger elegant, soft confetti when the page loads
+                const duration = 3000;
+                const end = Date.now() + duration;
+
+                const frame = () => {
+                    confetti({
+                        particleCount: 5,
+                        angle: 60,
+                        spread: 55,
+                        origin: { x: 0 },
+                        colors: ['#FFC0CB', '#FFB6C1', '#FFF0F5', '#E799A3', '#FFFFFF']
+                    });
+                    confetti({
+                        particleCount: 5,
+                        angle: 120,
+                        spread: 55,
+                        origin: { x: 1 },
+                        colors: ['#FFC0CB', '#FFB6C1', '#FFF0F5', '#E799A3', '#FFFFFF']
+                    });
+
+                    if (Date.now() < end) {
+                        requestAnimationFrame(frame);
+                    }
+                };
+
+                // Slight delay for dramatic effect
+                setTimeout(frame, 500);
+
             } catch (e) {
                 console.error("Failed to decode state", e);
             }
