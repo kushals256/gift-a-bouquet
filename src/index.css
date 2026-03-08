@@ -72,8 +72,6 @@ body {
 .btn-primary:hover {
   background: #1B221C;
   border-color: #1B221C;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(27, 34, 28, 0.15);
 }
 
 .btn-primary:active {
@@ -103,7 +101,6 @@ body {
 
 .btn-secondary:hover {
   background: rgba(44, 53, 45, 0.05);
-  transform: translateY(-2px);
 }
 
 .btn-secondary:active {
@@ -166,100 +163,4 @@ textarea.form-input {
 
 .flower-item:hover {
   transform: translateY(-5px);
-}
-
-/* =========================================
-   RESPONSIVE DESIGN (MOBILE & TABLET)
-   ========================================= */
-
-@media (max-width: 768px) {
-  #root {
-    padding: 2rem 1rem;
-  }
-
-  .logo-text {
-    font-size: 3rem;
-  }
-
-  .subtitle {
-    font-size: 0.65rem;
-  }
-
-  /* Make buttons fill width on smaller screens */
-  .btn-primary,
-  .btn-secondary {
-    min-width: 100%;
-    padding: 1rem 1.5rem;
-  }
-
-  .btn-group {
-    width: 100%;
-    max-width: 400px;
-    margin: 2.5rem auto 0;
-  }
-
-  /* Builder Flower Grid */
-  .flower-grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
-    gap: 1rem !important;
-    padding: 1rem !important;
-  }
-
-  .flower-item {
-    padding: 1rem !important;
-  }
-
-  .flower-item img {
-    width: 60px !important;
-    height: 60px !important;
-  }
-
-  /* Share / Final Screen Bouquet Sizing */
-  .share-bouquet-container {
-    width: 300px !important;
-    height: 400px !important;
-    margin: 1rem auto !important;
-    transform: scale(0.85);
-    /* Scales down the entire Tilt container to fit small phones */
-    transform-origin: top center;
-  }
-
-  .share-bouquet-bg {
-    width: 250px !important;
-    height: 250px !important;
-  }
-
-  .share-bouquet-art {
-    width: 220px !important;
-    height: 220px !important;
-    top: 130px !important;
-  }
-
-  .share-card-overlay {
-    width: 280px !important;
-    bottom: 20px !important;
-    padding: 1rem !important;
-    left: 50% !important;
-    transform: translate3d(-50%, 0, 80px) rotate(-2deg) !important;
-  }
-
-  .share-card-overlay p {
-    font-size: 1rem !important;
-  }
-}
-
-@media (max-width: 380px) {
-  .share-bouquet-container {
-    transform: scale(0.75);
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-text {
-    font-size: 2.5rem;
-  }
-
-  .flower-grid-container {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
 }
