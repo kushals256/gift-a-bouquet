@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Analytics } from "@vercel/analytics/react"
 import Home from './pages/Home.jsx'
 import Builder from './pages/Builder.jsx'
 import Customizer from './pages/Customizer.jsx'
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/garden" element={<Garden />} />
                 <Route path="/collection" element={<Collection />} />
             </Routes>
+            <Analytics />
         </BrowserRouter>
     )
 }
