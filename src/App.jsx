@@ -5,6 +5,7 @@ import Customizer from './pages/Customizer.jsx'
 import Compose from './pages/Compose.jsx'
 import Share from './pages/Share.jsx'
 import Garden from './pages/Garden.jsx'
+import Collection from './pages/Collection.jsx'
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/compose" element={<Compose />} />
                 <Route path="/share" element={<Share />} />
                 <Route path="/garden" element={<Garden />} />
+                <Route path="/collection" element={<Collection />} />
             </Routes>
         </BrowserRouter>
     )
