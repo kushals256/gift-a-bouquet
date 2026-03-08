@@ -40,7 +40,9 @@ export default function Garden() {
                             style={{ width: '150px', height: '150px', objectFit: 'contain', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))' }}
                         />
                         <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2.4rem', marginTop: '1.5rem', color: 'var(--text-color)' }}>
-                            {flower.name} {flower.name === 'Sunflower' && <span style={{ fontSize: '1.2rem', color: '#888', whiteSpace: 'nowrap' }}>(Sooryakanthi Hoovu)</span>}
+                            {flower.name}
+                            {flower.name === 'Sunflower' && <span style={{ fontSize: '1.2rem', color: '#888', whiteSpace: 'nowrap' }}> (Sooryakanthi Hoovu)</span>}
+                            {flower.name === 'Rose' && <span style={{ fontSize: '1.2rem', color: '#888', whiteSpace: 'nowrap' }}> (Gulabi Hoovu)</span>}
                         </h2>
                         <h3 style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '2px', color: '#B66068', margin: '0.5rem 0 1.25rem 0' }}>
                             {flower.meaning}
