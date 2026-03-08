@@ -219,27 +219,38 @@ textarea.form-input {
     width: 300px !important;
     height: 400px !important;
     margin: 1rem auto !important;
+    transform: scale(0.85);
+    /* Scales down the entire Tilt container to fit small phones */
+    transform-origin: top center;
   }
 
   .share-bouquet-bg {
-    width: 280px !important;
-    height: 280px !important;
+    width: 250px !important;
+    height: 250px !important;
   }
 
   .share-bouquet-art {
-    width: 250px !important;
-    height: 250px !important;
-    top: 140px !important;
+    width: 220px !important;
+    height: 220px !important;
+    top: 130px !important;
   }
 
   .share-card-overlay {
     width: 280px !important;
-    bottom: -10px !important;
-    padding: 1.5rem 1rem !important;
+    bottom: 20px !important;
+    padding: 1rem !important;
+    left: 50% !important;
+    transform: translate3d(-50%, 0, 80px) rotate(-2deg) !important;
   }
 
   .share-card-overlay p {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .share-bouquet-container {
+    transform: scale(0.75);
   }
 }
 
