@@ -71,7 +71,7 @@ export default function Collection() {
 
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))',
                 gap: '3rem',
                 maxWidth: '1000px',
                 margin: '0 auto'

@@ -17,7 +17,7 @@ export default function Garden() {
 
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))',
                 gap: '2.5rem',
                 maxWidth: '1200px',
                 margin: '0 auto'
