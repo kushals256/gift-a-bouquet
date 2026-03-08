@@ -43,6 +43,7 @@ export default function Garden() {
                             {flower.name}
                             {flower.name === 'Sunflower' && <span style={{ fontSize: '1.2rem', color: '#888', whiteSpace: 'nowrap' }}> (Sooryakanthi Hoovu)</span>}
                             {flower.name === 'Rose' && <span style={{ fontSize: '1.2rem', color: '#888', whiteSpace: 'nowrap' }}> (Gulabi Hoovu)</span>}
+                            {flower.name === 'Jasmine' && <span style={{ fontSize: '1.2rem', color: '#888', whiteSpace: 'nowrap' }}> (Mallige Hoovu)</span>}
                         </h2>
                         <h3 style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '2px', color: '#B66068', margin: '0.5rem 0 1.25rem 0' }}>
                             {flower.meaning}

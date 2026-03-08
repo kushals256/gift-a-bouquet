@@ -10,7 +10,8 @@ export const FLOWER_ASSETS = [
     { id: 'f9', name: 'Lily', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/lily.webp', meaning: 'Purity & Passion', description: 'A majestic, sweet-smelling flower that elegantly points towards the heavens.' },
     { id: 'f10', name: 'Daisy', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/daisy.webp', meaning: 'Innocence & Hope', description: 'A simple, joyful bloom that carries a message of new beginnings and loyal love.' },
     { id: 'f11', name: 'Peony', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/peony.webp', meaning: 'Romance & Prosperity', description: 'A lush, voluminous flower that is considered an omen of good fortune and happy relationships.' },
-    { id: 'f12', name: 'Rose', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/rose.webp', meaning: 'Devotion', description: 'The quintessential flower of deep emotion, capturing the heart with its timeless, velvety petals.' }
+    { id: 'f12', name: 'Rose', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/rose.webp', meaning: 'Devotion', description: 'The quintessential flower of deep emotion, capturing the heart with its timeless, velvety petals.' },
+    { id: 'f13', name: 'Jasmine', img: '/jasmine.png', meaning: 'Sweet Love', description: 'A delicate, intensely fragrant night-blooming flower often used in ceremonies and celebrations.' }
 ];
 
 export const GREENERY_ASSETS = [
