@@ -55,7 +55,7 @@ export default function Share() {
                 Hi, I made this bouquet for you!
             </p>
 
-            <div style={{ margin: '2rem auto', position: 'relative', width: 400, height: 500 }}>
+            <div style={{ margin: '1rem auto', position: 'relative', width: 400, height: 450 }}>
                 {/* Light neutral circle bg */}
                 <div style={{
                     position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)',
@@ -116,7 +116,7 @@ export default function Share() {
                 </div>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center', marginTop: '6rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'center', marginTop: '4rem' }}>
                 <button className="btn-primary" onClick={handleCopyLink} style={{ width: '100%', maxWidth: '250px' }}>
                     {copied ? 'Copied!' : 'Copy Link'}
                 </button>
@@ -125,7 +125,7 @@ export default function Share() {
                 )}
             </div>
 
-            <div style={{ marginTop: '4rem', fontSize: '0.75rem', marginBottom: '2rem', letterSpacing: '1px', color: '#888' }}>
+            <div style={{ marginTop: '2rem', fontSize: '0.75rem', marginBottom: '1.5rem', letterSpacing: '1px', color: '#888' }}>
                 created with gift a bouquet<br />
                 -by kushalicious :)<br />
                 <a href="/" style={{ color: 'var(--text-color)', textDecoration: 'none', marginTop: '0.5rem', display: 'inline-block', borderBottom: '1px solid var(--text-color)' }}>make yours now</a>
