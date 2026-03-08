@@ -68,6 +68,10 @@ export default function Compose() {
                 <button className="btn-secondary" style={{ minWidth: "150px" }} onClick={() => window.history.back()}>Back</button>
                 <button className="btn-primary" style={{ minWidth: "150px" }} onClick={handleNext}>Next</button>
             </div>
+
+            <div style={{ marginTop: 'auto', fontSize: '0.75rem', marginBottom: '2rem', letterSpacing: '1px', color: '#888', paddingTop: '3rem' }}>
+                -by kushalicious :)
+            </div>
         </main>
     );
 }

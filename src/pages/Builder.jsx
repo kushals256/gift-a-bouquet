@@ -109,6 +109,10 @@ export default function Builder() {
                     Next
                 </button>
             </div>
+
+            <div style={{ marginTop: 'auto', fontSize: '0.75rem', marginBottom: '2rem', letterSpacing: '1px', color: '#888', paddingTop: '2rem' }}>
+                -by kushalicious :)
+            </div>
         </main >
     );
 }
