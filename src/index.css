@@ -167,3 +167,88 @@ textarea.form-input {
 .flower-item:hover {
   transform: translateY(-5px);
 }
+
+/* =========================================
+   RESPONSIVE DESIGN (MOBILE & TABLET)
+   ========================================= */
+
+@media (max-width: 768px) {
+  #root {
+    padding: 2rem 1rem;
+  }
+
+  .logo-text {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 0.65rem;
+  }
+
+  /* Make buttons fill width on smaller screens */
+  .btn-primary,
+  .btn-secondary {
+    min-width: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  .btn-group {
+    width: 100%;
+    max-width: 400px;
+    margin: 2.5rem auto 0;
+  }
+
+  /* Builder Flower Grid */
+  .flower-grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
+    gap: 1rem !important;
+    padding: 1rem !important;
+  }
+
+  .flower-item {
+    padding: 1rem !important;
+  }
+
+  .flower-item img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  /* Share / Final Screen Bouquet Sizing */
+  .share-bouquet-container {
+    width: 300px !important;
+    height: 400px !important;
+    margin: 1rem auto !important;
+  }
+
+  .share-bouquet-bg {
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  .share-bouquet-art {
+    width: 250px !important;
+    height: 250px !important;
+    top: 140px !important;
+  }
+
+  .share-card-overlay {
+    width: 280px !important;
+    bottom: -10px !important;
+    padding: 1.5rem 1rem !important;
+  }
+
+  .share-card-overlay p {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 2.5rem;
+  }
+
+  .flower-grid-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
