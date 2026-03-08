@@ -1,16 +1,16 @@
 export const FLOWER_ASSETS = [
-    { id: 'f1', name: 'Orchid', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/orchid.webp' },
-    { id: 'f2', name: 'Tulip', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/tulip.webp' },
-    { id: 'f3', name: 'Dahlia', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/dahlia.webp' },
-    { id: 'f4', name: 'Anemone', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/anemone.webp' },
-    { id: 'f5', name: 'Carnation', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/carnation.webp' },
-    { id: 'f6', name: 'Zinnia', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/zinnia.webp' },
-    { id: 'f7', name: 'Ranunculus', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/ranunculus.webp' },
-    { id: 'f8', name: 'Sunflower', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/sunflower.webp' },
-    { id: 'f9', name: 'Lily', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/lily.webp' },
-    { id: 'f10', name: 'Daisy', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/daisy.webp' },
-    { id: 'f11', name: 'Peony', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/peony.webp' },
-    { id: 'f12', name: 'Rose', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/rose.webp' }
+    { id: 'f1', name: 'Orchid', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/orchid.webp', meaning: 'Love & Beauty', description: 'A delicate, exotic flower that symbolizes refined beauty, luxury, and strength.' },
+    { id: 'f2', name: 'Tulip', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/tulip.webp', meaning: 'Perfect Love', description: 'A classic spring bloom representing deep, unconditional love and elegance.' },
+    { id: 'f3', name: 'Dahlia', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/dahlia.webp', meaning: 'Inner Strength', description: 'A bold, intricate flower associated with enduring grace under pressure and standing out from the crowd.' },
+    { id: 'f4', name: 'Anemone', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/anemone.webp', meaning: 'Anticipation', description: 'A striking wildflower known for its dark center, symbolizing protection against ill wishes.' },
+    { id: 'f5', name: 'Carnation', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/carnation.webp', meaning: 'Fascination', description: 'A ruffled, long-lasting bloom historically given to express admiration and good luck.' },
+    { id: 'f6', name: 'Zinnia', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/zinnia.webp', meaning: 'Endurance', description: 'A vibrant, cheerful daisy-like flower that represents lasting affection and daily remembrance.' },
+    { id: 'f7', name: 'Ranunculus', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/ranunculus.webp', meaning: 'Charm', description: 'A brilliantly colored flower with layers of tissue-thin petals, conveying an irresistible, radiant charm.' },
+    { id: 'f8', name: 'Sunflower', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/sunflower.webp', meaning: 'Adoration', description: 'A bright, sunny bloom that turns its face to the sun, symbolizing unshakeable faith and loyalty.' },
+    { id: 'f9', name: 'Lily', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/lily.webp', meaning: 'Purity & Passion', description: 'A majestic, sweet-smelling flower that elegantly points towards the heavens.' },
+    { id: 'f10', name: 'Daisy', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/daisy.webp', meaning: 'Innocence & Hope', description: 'A simple, joyful bloom that carries a message of new beginnings and loyal love.' },
+    { id: 'f11', name: 'Peony', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/peony.webp', meaning: 'Romance & Prosperity', description: 'A lush, voluminous flower that is considered an omen of good fortune and happy relationships.' },
+    { id: 'f12', name: 'Rose', img: 'https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/rose.webp', meaning: 'Devotion', description: 'The quintessential flower of deep emotion, capturing the heart with its timeless, velvety petals.' }
 ];
 
 export const GREENERY_ASSETS = [

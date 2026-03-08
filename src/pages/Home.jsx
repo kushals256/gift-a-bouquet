@@ -20,7 +20,7 @@ export default function Home() {
                 <button className="btn-secondary">View Our Collection</button>
             </div>
             <div style={{ marginTop: '3rem' }}>
-                <a href="#" style={{ color: '#000', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>View Garden</a>
+                <a href="/garden" style={{ color: '#000', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px', textDecoration: 'none', borderBottom: '2px solid #000', paddingBottom: '4px' }}>View Garden</a>
             </div>
             <div style={{ marginTop: 'auto', fontSize: '0.75rem', marginBottom: '2rem', letterSpacing: '1px', color: '#888', paddingTop: '2rem' }}>
                 -by kushalicious :)
