@@ -48,64 +48,66 @@ export default function Share() {
 
     return (
         <main className="text-center" style={{ overflowX: 'hidden' }}>
-            <div className="logo-container" style={{ marginBottom: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <img src="https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/peony.webp" alt="gift a bouquet" style={{ height: '60px', objectFit: 'contain' }} />
-                <h1 className="logo-text" style={{ marginTop: '0.5rem', fontSize: '2rem' }}>gift a bouquet</h1>
+            <div className="logo-container" style={{ marginBottom: '0.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <h1 className="logo-text" style={{ marginTop: '1rem', fontSize: '2.8rem' }}>gift a bouquet</h1>
             </div>
-            <p style={{ letterSpacing: '2px', fontSize: '1rem', marginBottom: '2rem' }}>
+            <p style={{ letterSpacing: '2px', fontSize: '0.9rem', marginBottom: '1rem' }}>
                 Hi, I made this bouquet for you!
             </p>
 
-            <div style={{ margin: '1rem auto', position: 'relative', width: 'min(100%, 400px)', height: 450 }}>
-                {/* Light neutral circle bg */}
-                <div style={{
-                    position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)',
-                    width: 'min(90vw, 350px)', height: 'min(90vw, 350px)', background: '#F2EBE5', borderRadius: '50%', zIndex: 0
-                }}></div>
-
-                {/* Bouquet container centered in the circle */}
-                <div style={{
-                    position: 'absolute', top: 175, left: '50%', transform: 'translate(-50%, -50%)',
-                    width: 'min(80vw, 300px)', height: 'min(80vw, 300px)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1
-                }}>
-                    {/* Greenery */}
+            <div style={{ margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', width: 'min(100%, 400px)' }}>
+                {/* Bouquet Section */}
+                <div style={{ position: 'relative', width: 'min(85vw, 320px)', height: 'min(85vw, 320px)' }}>
+                    {/* Light neutral circle bg */}
                     <div style={{
-                        position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)',
-                        width: 280, height: 280, zIndex: 0,
-                        opacity: 0.9, filter: 'drop-shadow(0px 4px 10px rgba(0,0,0,0.1))'
-                    }} dangerouslySetInnerHTML={{ __html: GREENERY_ASSETS[greeneryIdx]?.svg || '' }}></div>
+                        position: 'absolute', inset: 0,
+                        background: '#F2EBE5', borderRadius: '50%', zIndex: 0
+                    }}></div>
 
-                    {/* Flowers */}
-                    {flowers.map((id, index) => {
-                        const flowerDef = FLOWER_ASSETS.find(f => f.id === id);
-                        if (!flowerDef) return null;
+                    {/* Bouquet container centered in the circle */}
+                    <div style={{
+                        position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+                        width: '85%', height: '85%', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1
+                    }}>
+                        {/* Greenery */}
+                        <div style={{
+                            position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)',
+                            width: 280, height: 280, zIndex: 0,
+                            opacity: 0.9, filter: 'drop-shadow(0px 4px 10px rgba(0,0,0,0.1))'
+                        }} dangerouslySetInnerHTML={{ __html: GREENERY_ASSETS[greeneryIdx]?.svg || '' }}></div>
 
-                        const r = 35 + rand() * 45;
-                        const theta = Math.PI + (rand() * Math.PI); // Keep flowers in the top half
-                        const x = r * Math.cos(theta);
-                        const y = r * Math.sin(theta);
-                        const scale = 0.8 + rand() * 0.4;
-                        const rot = rand() * 360;
+                        {/* Flowers */}
+                        {flowers.map((id, index) => {
+                            const flowerDef = FLOWER_ASSETS.find(f => f.id === id);
+                            if (!flowerDef) return null;
 
-                        return (
-                            <img
-                                key={index}
-                                src={flowerDef.img}
-                                alt={flowerDef.name}
-                                style={{
-                                    position: 'absolute',
-                                    width: 70, height: 70, objectFit: 'contain',
-                                    transform: `translate(${x}px, ${y}px) scale(${scale}) rotate(${rot}deg)`,
-                                    zIndex: Math.floor(r)
-                                }}
-                            />
-                        );
-                    })}
+                            const r = 35 + rand() * 45;
+                            const theta = Math.PI + (rand() * Math.PI); // Keep flowers in the top half
+                            const x = r * Math.cos(theta);
+                            const y = r * Math.sin(theta);
+                            const scale = 0.8 + rand() * 0.4;
+                            const rot = rand() * 360;
+
+                            return (
+                                <img
+                                    key={index}
+                                    src={flowerDef.img}
+                                    alt={flowerDef.name}
+                                    style={{
+                                        position: 'absolute',
+                                        width: 70, height: 70, objectFit: 'contain',
+                                        transform: `translate(${x}px, ${y}px) scale(${scale}) rotate(${rot}deg)`,
+                                        zIndex: Math.floor(r)
+                                    }}
+                                />
+                            );
+                        })}
+                    </div>
                 </div>
 
                 {/* Card Overlay */}
                 <div style={{
-                    position: 'absolute', bottom: 10, left: '50%', transform: 'translateX(-50%) rotate(-2deg)',
+                    position: 'relative', marginTop: '-3rem', transform: 'rotate(-2deg)',
                     width: 'min(90vw, 320px)', padding: '2rem 1.5rem', border: 'none', background: '#FFFCF8',
                     textAlign: 'left', boxShadow: '0 20px 40px rgba(44, 53, 45, 0.08)', zIndex: 10,
                     fontFamily: 'var(--font-handwriting)',
@@ -118,7 +120,7 @@ export default function Share() {
                 </div>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'center', marginTop: '4rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center', marginTop: '2rem' }}>
                 <button className="btn-primary" onClick={handleCopyLink} style={{ width: '100%', maxWidth: '250px' }}>
                     {copied ? 'Copied!' : 'Copy Link'}
                 </button>
@@ -127,7 +129,7 @@ export default function Share() {
                 )}
             </div>
 
-            <div style={{ marginTop: '2rem', fontSize: '0.75rem', marginBottom: '1.5rem', letterSpacing: '1px', color: '#888' }}>
+            <div style={{ marginTop: '1rem', fontSize: '0.7rem', marginBottom: '1rem', letterSpacing: '1px', color: '#888' }}>
                 created with gift a bouquet<br />
                 -by <a href="https://www.instagram.com/kushaliciously/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: '2px' }}>kushalicious</a> :)<br />
                 <a href="/" style={{ color: 'var(--text-color)', textDecoration: 'none', marginTop: '0.5rem', display: 'inline-block', borderBottom: '1px solid var(--text-color)' }}>make yours now</a>
