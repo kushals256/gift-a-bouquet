@@ -128,7 +128,7 @@ export default function Share() {
 
             <div style={{ marginTop: '2rem', fontSize: '0.75rem', marginBottom: '1.5rem', letterSpacing: '1px', color: '#888' }}>
                 created with gift a bouquet<br />
-                -by <a href="https://www.instagram.com/kushaliciously/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>kushalicious</a> :)<br />
+                -by <a href="https://www.instagram.com/kushaliciously/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: '2px' }}>kushalicious</a> :)<br />
                 <a href="/" style={{ color: 'var(--text-color)', textDecoration: 'none', marginTop: '0.5rem', display: 'inline-block', borderBottom: '1px solid var(--text-color)' }}>make yours now</a>
             </div>
         </main>
