@@ -48,8 +48,9 @@ export default function Share() {
 
     return (
         <main className="text-center" style={{ overflowX: 'hidden' }}>
-            <div className="logo-container" style={{ marginBottom: '1rem' }}>
-                <h1 className="logo-text" style={{ fontSize: '3rem' }}>gift a bouquet</h1>
+            <div className="logo-container" style={{ marginBottom: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <img src="https://pub-4ac1b7f0da8c43e8983d7821a18a8c0d.r2.dev/color/flowers/peony.webp" alt="gift a bouquet" style={{ height: '60px', objectFit: 'contain' }} />
+                <h1 className="logo-text" style={{ marginTop: '0.5rem', fontSize: '2rem' }}>gift a bouquet</h1>
             </div>
             <p style={{ letterSpacing: '2px', fontSize: '1rem', marginBottom: '2rem' }}>
                 Hi, I made this bouquet for you!
