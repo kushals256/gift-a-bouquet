@@ -158,7 +158,7 @@ export default function Collection() {
             </div>
 
             <div className="text-center" style={{ marginTop: '4rem', fontSize: '0.75rem', marginBottom: '1rem', letterSpacing: '1px', color: '#888', paddingTop: '2rem' }}>
-                -by kushalicious :)
+                -by <a href="https://www.instagram.com/kushaliciously/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>kushalicious</a> :)
             </div>
         </main>
     );
