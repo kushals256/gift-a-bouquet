@@ -27,7 +27,7 @@ export default function Compose() {
                 sign
             };
             const encoded = btoa(JSON.stringify(fullState));
-            window.location.href = `/share?s=${encoded}`;
+            window.location.href = `/coffee?s=${encoded}`;
         }
     };
 
